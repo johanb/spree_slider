@@ -10,8 +10,9 @@ module SpreeSlider
 
       #add stylesheets
       inject_into_file "app/assets/stylesheets/store/all.css", " *= require themes/default/default\n", :before => /\*\//, :verbose => true
-      inject_into_file "app/assets/stylesheets/store/all.css", " *= require themes/pascal/pascal\n", :before => /\*\//, :verbose => true
-      inject_into_file "app/assets/stylesheets/store/all.css", " *= require themes/orman/orman\n", :before => /\*\//, :verbose => true
+      inject_into_file "app/assets/stylesheets/store/all.css", " *= require themes/bar/bar\n", :before => /\*\//, :verbose => true
+      inject_into_file "app/assets/stylesheets/store/all.css", " *= require themes/dark/dark\n", :before => /\*\//, :verbose => true
+      inject_into_file "app/assets/stylesheets/store/all.css", " *= require themes/light/light\n", :before => /\*\//, :verbose => true
       inject_into_file "app/assets/stylesheets/store/all.css", " *= require nivo-slider\n", :before => /\*\//, :verbose => true
 
       #copy migrations
